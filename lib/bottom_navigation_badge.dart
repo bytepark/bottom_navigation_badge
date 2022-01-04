@@ -110,8 +110,6 @@ class BottomNavigationBadge {
           overflow: Overflow.visible,
         ),
         label: items[index].label,
-        title: items[index].title,
-        label: items[index].label,
         activeIcon: new Stack(
           children: <Widget>[
             Container(
@@ -135,8 +133,6 @@ class BottomNavigationBadge {
       BottomNavigationBarItem _replacer = BottomNavigationBarItem(
           icon: items[index].icon.children[0].child,
           label: items[index].label,
-          title: items[index].title,
-          label: items[index].label,
           activeIcon: items[index].activeIcon.children[0].child,
           backgroundColor: items[index].backgroundColor);
       items.removeAt(index);
@@ -150,8 +146,6 @@ class BottomNavigationBadge {
       if (items[i].icon is Stack) {
         BottomNavigationBarItem _replacer = BottomNavigationBarItem(
             icon: items[i].icon.children[0],
-            label: items[i].label,
-            title: items[i].title,
             label: items[i].label,
             activeIcon: items[i].activeIcon.children[0],
             backgroundColor: items[i].backgroundColor);
