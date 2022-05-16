@@ -107,7 +107,7 @@ class BottomNavigationBadge {
             badge
           ],
           alignment: setPosition(),
-          overflow: Overflow.visible,
+          //overflow: Overflow.visible,
         ),
         label: items[index].label,
         activeIcon: new Stack(
@@ -120,7 +120,7 @@ class BottomNavigationBadge {
             badge
           ],
           alignment: setPosition(),
-          overflow: Overflow.visible,
+          //overflow: Overflow.visible,
         ),
         backgroundColor: items[index].backgroundColor);
     items.removeAt(index);
